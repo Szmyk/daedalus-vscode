@@ -1,0 +1,50 @@
+{
+	"name": "daedalus",
+	"displayName": "Daedalus",
+	"description": "Language for gameplay scripting in games on ZenGin engine (Gothic I, II & II: NoTR)",
+	"version": "0.1.0",
+	"publisher": "SzymonZak",
+	"keywords": [
+		"gothic",
+		"modding"
+	],
+	"preview": true,
+	"icon": "images/gothic-icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Szmyk/daedalus-vscode.git"
+	},
+	"engines": {
+		"vscode": "^1.14.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "daedalus",
+				"aliases": [
+					"Daedalus",
+					"daedalus"
+				],
+				"extensions": [
+					".d"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "daedalus",
+				"scopeName": "daedalus",
+				"path": "./syntaxes/daedalus.tmLanguage"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "73464e80-12a3-4e9e-b594-9ee5ce996453",
+		"publisherId": "c881cb11-f3a6-49a1-a536-0d957e2ac057",
+		"publisherDisplayName": "Szymon Zak"
+	}
+}
